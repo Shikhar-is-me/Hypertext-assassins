@@ -4,8 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <style>
 canvas {
-    border:1px solid #d3d3d3;
-    background-color: #f1f1f1;
+    border:5px solid #fc0000;
+    background-color: #00e1ff;
 }
 </style>
 </head>
@@ -26,8 +26,8 @@ function startGame() {
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
+        this.canvas.width = 1669;
+        this.canvas.height = 689;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
@@ -38,6 +38,7 @@ var myGameArea = {
     }
 }
 
+
 function component(width, height, color, x, y, type) {
     this.type = type;
     this.score = 0;
@@ -47,7 +48,7 @@ function component(width, height, color, x, y, type) {
     this.speedY = 0;    
     this.x = x;
     this.y = y;
-    this.gravity = 0;
+    this.gravity = 50;
     this.gravitySpeed = 0;
     this.update = function() {
         ctx = myGameArea.context;
