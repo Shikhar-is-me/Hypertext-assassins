@@ -11,9 +11,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 1px 4px rgb(6, 255, 255) ;
+    box-shadow: 0 1px 4px rgb(6, 184, 255) ;
     padding: 15px;
-    background-color:#8a2be2;
+    background-color:#15ff00;
     border-radius: 5px;
 }
 
@@ -25,11 +25,11 @@ body {
 }
 
 .grid button {
-    background-color: violet;
-    color: purple;
+    background-color: rgb(255, 0, 0);
+    color: rgb(55, 0, 255);
     font-size: 24px;
     font-weight:bolder;
-    border: 1px plum;
+    border: 1px rgb(0, 183, 255);
     outline: none;
     cursor: pointer;
 }
@@ -48,8 +48,8 @@ body {
     box-shadow:  0 1px 4px rgb(6, 255, 255) ;
     padding: 5px;
     width: 80px;
-    background-color: pink;
-    color:orchid;
+    background-color: rgb(198, 216, 31);
+    color:rgb(255, 153, 0);
     outline: none;
     cursor: pointer;
 
