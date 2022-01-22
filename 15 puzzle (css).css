@@ -1,0 +1,56 @@
+html {
+    height:100%;
+}
+
+body { 
+    height:100%;
+}
+
+.game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1px 4px rgb(6, 255, 255) ;
+    padding: 15px;
+    background-color:#8a2be2;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px;
+    border: 3px slateblue
+}
+
+.grid button {
+    background-color: violet;
+    color: purple;
+    font-size: 24px;
+    font-weight:bolder;
+    border: 1px plum;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px ;
+    box-shadow:  0 1px 4px rgb(6, 255, 255) ;
+    padding: 5px;
+    width: 80px;
+    background-color: pink;
+    color:orchid;
+    outline: none;
+    cursor: pointer;
+
+}
