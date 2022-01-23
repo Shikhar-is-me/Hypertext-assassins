@@ -19,24 +19,25 @@ function draw() {
     playerPaddle.display();
     aiPaddle.display();
       
-    playerPaddle.update(); 
-    aiPaddle.update();
-    processAI();
-    	
-  ball.update(); 
-  ball.display(); 
-	
-}
-
-function processAI() {
-  let middleOfPaddle = aiPaddle.y + aiPaddle.height / 2;
-	
-  if (middleOfPaddle > ball.y) {
-    aiPaddle.isUp = true;
-    aiPaddle.isDown = false;
-  } else {
-    aiPaddle.isDown = true;
-    aiPaddle.isUp = false;
-
+    playerPaddle.update(); // add this
+    aiPaddle.update();     // and this
+      
+    processAI();   // andddd thiss
+      
+    ball.update(); 
+    ball.display(); 
+      
   }
-}
+  
+  function processAI() {
+    let middleOfPaddle = aiPaddle.y + aiPaddle.height / 2;
+      
+    if (middleOfPaddle > ball.y) {
+      aiPaddle.isUp = true;
+      aiPaddle.isDown = false;
+    } else {
+      aiPaddle.isDown = true;
+      aiPaddle.isUp = false;
+  
+    }
+  }
