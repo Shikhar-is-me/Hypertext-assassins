@@ -8,11 +8,11 @@ class Ball{
      
      
     update(playerScore, aiScore) {
-        
+       
         if (this.y < this.r || this.y > height - this.r) {
             this.ySpeed = -this.ySpeed;
         } 
-        
+      
         if (this.x < this.r ) {
           aiScore.increment();
         	this.reset();
