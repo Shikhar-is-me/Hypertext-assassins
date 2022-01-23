@@ -1,7 +1,17 @@
 html, body {
   margin: 0;
-  padding: 0;
+  padding: 5px;
+  background-color: aqua;
 }
 canvas {
   display: block;
+  margin-left: 30%;
+  margin-top: 10%;
+
+  
 }
+
+p {
+  text-align: center;
+}
+
